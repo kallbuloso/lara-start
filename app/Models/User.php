@@ -46,6 +46,5 @@ class User extends Authenticatable implements MustVerifyEmail
     public function sendEmailVerificationNotification()
     {
         $this->notify(new Notifications\VerifyEmail);
-        // app\Notifications\VerifyEmail.php
     }
 }
