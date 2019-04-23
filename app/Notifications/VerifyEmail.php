@@ -44,7 +44,7 @@ class VerifyEmail extends Notification implements ShouldQueue
         }
 
         return (new MailMessage)
-            ->subject(Lang::getFromJson('Verify Email Address 2'))
+            ->subject(Lang::getFromJson('Verify Email Address'))
             ->line(Lang::getFromJson('Please click the button below to verify your email address.'))
             ->action(
                 Lang::getFromJson('Verify Email Address'),
