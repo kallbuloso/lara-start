@@ -1,0 +1,1 @@
+Este é o conteúdo do artigo https://kallbuloso.com.br/amaralkarl/alterar-o-diretorio-padrao-dos-models-no-laravel/
