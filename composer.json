@@ -1,11 +1,12 @@
 {
-    "name": "kallbuloso/laravel-dir-models",
+    "name": "kallbuloso/lara-start",
     "type": "project",
-    "description": "Framework Laravel com os Models na pasta 'Models'.",
+    "description": "Base for Framework Laravel 5.7.",
     "keywords": [
         "framework",
         "kallbuloso",
-        "laravel"
+        "laravel",
+        "Start project"
     ],
     "license": "MIT",
     "require": {
