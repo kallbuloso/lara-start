@@ -5,13 +5,9 @@
     @include('layouts.partials._head')
     <body>
         <div id="page-loader" class="show"></div>
-        <div id="app" style="display:none">
-        {{-- <div id="app"> --}}
-            <div id="page-container" class="sidebar-inverse side-scroll page-header-fixed page-header-inverse main-content-boxed enable-page-overlay">
-                <!-- Sidebar -->
-                @include('layouts.partials.app._sidebar')
-                <!-- END Header -->
-
+        {{-- <div id="app" style="display:none"> --}}
+        <div id="app">
+            <div id="page-container" class="sidebar-inverse side-scroll page-header-fixed page-header-glass page-header-inverse main-content-boxed enable-page-overlay">
                 <!-- Header -->
                 @include('layouts.partials.app._page_header')
                 <!-- END Header -->
@@ -27,13 +23,12 @@
         </div>  
 
         <!-- Codebase Core JS -->
-        @mix('js/pages/pages.js')
         @asset('js/codebase.core.min.js')
         @asset('js/codebase.app.min.js')
         {{-- <script src="{{ mix('') }}"></script> --}}
-        
+
         <!-- Laravel Scaffolding JS -->
-        @mix('js/app.js')
+        @asset('js/laravel.app.js')
         {{-- <script src="{{ mix('') }}"></script> --}}
 
         @yield('js_after')

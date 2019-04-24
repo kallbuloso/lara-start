@@ -1,6 +1,6 @@
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
         <title>"{{config('app.name')}} | @yield('title_header', config('app.name'))"</title>
 
@@ -26,6 +26,7 @@
 
         <!-- Fonts and Styles -->
         @yield('css_before')
+
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,700">
         <link rel="stylesheet" id="css-main" href="{{ mix('/css/codebase.css') }}">
 
