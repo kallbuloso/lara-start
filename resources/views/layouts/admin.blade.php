@@ -17,6 +17,9 @@
                 <!-- END Header -->
                 <!-- Main Container -->
                 <main id="main-container">
+                    @isset($breadcrumb)
+                        <v-breadcrumb v-bind:itens="{{$breadcrumb}}"></v-breadcrumb>                
+                    @endisset            
                     @yield('content')
                 </main>
                 <!-- END Main Container -->

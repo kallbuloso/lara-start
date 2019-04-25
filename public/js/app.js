@@ -32565,12 +32565,12 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 // Components
 
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('breadcrumb', __webpack_require__(/*! ./components/breadcrumb.vue */ "./resources/assets/js/components/breadcrumb.vue")["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('block-tile-count', __webpack_require__(/*! ./components/blockTileCount.vue */ "./resources/assets/js/components/blockTileCount.vue")["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('box-panel', __webpack_require__(/*! ./components/boxPanel.vue */ "./resources/assets/js/components/boxPanel.vue")["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('container', __webpack_require__(/*! ./components/container.vue */ "./resources/assets/js/components/container.vue")["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('tabela-lista', __webpack_require__(/*! ./components/TabelaLista.vue */ "./resources/assets/js/components/TabelaLista.vue")["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('formulario', __webpack_require__(/*! ./components/forms/form.vue */ "./resources/assets/js/components/forms/form.vue")["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('v-breadcrumb', __webpack_require__(/*! ./components/breadcrumb.vue */ "./resources/assets/js/components/breadcrumb.vue")["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('v-block-tile-count', __webpack_require__(/*! ./components/blockTileCount.vue */ "./resources/assets/js/components/blockTileCount.vue")["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('v-box-panel', __webpack_require__(/*! ./components/boxPanel.vue */ "./resources/assets/js/components/boxPanel.vue")["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('v-container', __webpack_require__(/*! ./components/container.vue */ "./resources/assets/js/components/container.vue")["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('v-tabela-lista', __webpack_require__(/*! ./components/TabelaLista.vue */ "./resources/assets/js/components/TabelaLista.vue")["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('v-formulario', __webpack_require__(/*! ./components/forms/form.vue */ "./resources/assets/js/components/forms/form.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

@@ -17,8 +17,32 @@ class $CONTROLLERNAME$Controller extends Controller
     public function index()
     {
         $title = "$PLURAL_NAME$";
-        $$PLURAL_NAME$ = $CONTROLLERNAME$::get->all();
-        return view('$LOWER_NAME$::$CONTROLLERNAME$.index', compact('title'));
+        $subTitle = "Exibindo $title cadastrados";
+        $breadcrumb = json_encode([
+            ["titulo"=>"Home","url"=>url('/')],
+            ["titulo"=>"$STUDLY_NAME$","url"=>url('/$LOWER_NAME$')],
+            ["titulo"=>$title]
+        ]);
+        // $$PLURAL_NAME$ = $CONTROLLERNAME$::paginate('100');
+        return view('$LOWER_NAME$::$CONTROLLERNAME$.index', compact('title','subTitle','breadcrumb','$PLURAL_NAME$'));
+    }
+
+    /**
+     * Display a listing of the resource.
+     * @return Response
+     */
+    public function all()
+    {
+        $title = "$PLURAL_NAME$";
+        $subTitle = "Exibindo $title cadastrados";
+        $breadcrumb = json_encode([
+            ["titulo"=>"Home","url"=>url('/')],
+            ["titulo"=>"$STUDLY_NAME$","url"=>url('/$LOWER_NAME$')],
+            ["titulo"=>"$PLURAL_NAME$","url"=>route('$LOWER_CONTROLLERNAME$')],
+            ["titulo"=>$title]
+        ]);
+        // $$PLURAL_NAME$ = $CONTROLLERNAME$::get()->all();
+        return view('$LOWER_NAME$::$CONTROLLERNAME$.index', compact('title','subTitle','breadcrumb','$PLURAL_NAME$'));
     }
 
     /**
@@ -27,8 +51,14 @@ class $CONTROLLERNAME$Controller extends Controller
      */
     public function create()
     {
-        $title = "$PLURAL_NAME$";
-        return view('$LOWER_NAME$::$CONTROLLERNAME$.create', compact('title'));
+        $title = "Create a new $PLURAL_NAME$";
+        $breadcrumb = json_encode([
+            ["titulo"=>"Home","url"=>url('/')],
+            ["titulo"=>"$STUDLY_NAME$","url"=>url('/$LOWER_NAME$')],
+            ["titulo"=>"$PLURAL_NAME$","url"=>route('$LOWER_CONTROLLERNAME$')],
+            ["titulo"=>$title]
+        ]);
+        return view('$LOWER_NAME$::$CONTROLLERNAME$.create', compact('title','breadcrumb'));
     }
 
     /**
@@ -49,8 +79,15 @@ class $CONTROLLERNAME$Controller extends Controller
      */
     public function show($id)
     {
-        $title = "$PLURAL_NAME$";
-        return view('$LOWER_NAME$::$CONTROLLERNAME$.show', compact('title'));
+        $$LOWER_CONTROLLERNAME$ = $CONTROLLERNAME$::findOrFail($id);
+        $title = "$PLURAL_NAME$ Show Details";
+        $breadcrumb = json_encode([
+            ["titulo"=>"Home","url"=>url('/')],
+            ["titulo"=>"$STUDLY_NAME$","url"=>url('/$LOWER_NAME$')],
+            ["titulo"=>"$PLURAL_NAME$","url"=>route('$LOWER_CONTROLLERNAME$')],
+            ["titulo"=>$title]
+        ]);
+        return view('$LOWER_NAME$::$CONTROLLERNAME$.show', compact('title','breadcrumb','$LOWER_CONTROLLERNAME$'));
     }
 
     /**
@@ -59,8 +96,16 @@ class $CONTROLLERNAME$Controller extends Controller
      * @return Response
      */
     public function edit($id)
-    {   $title = "$PLURAL_NAME$";
-        return view('$LOWER_NAME$::$CONTROLLERNAME$.edit', compact('title'));
+    {
+        $$LOWER_CONTROLLERNAME$ = $CONTROLLERNAME$::findOrFail($id);
+        $title = "Edit $CONTROLLERNAME$";
+        $breadcrumb = json_encode([
+            ["titulo"=>"Home","url"=>url('/')],
+            ["titulo"=>"$STUDLY_NAME$","url"=>url('/$LOWER_NAME$')],
+            ["titulo"=>"$PLURAL_NAME$","url"=>route('$LOWER_CONTROLLERNAME$')],
+            ["titulo"=>$title]
+        ]);
+        return view('$LOWER_NAME$::$CONTROLLERNAME$.edit', compact('title','breadcrumb'));
     }
 
     /**
