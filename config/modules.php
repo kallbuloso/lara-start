@@ -124,7 +124,8 @@ return [
         /**
          * 
          */
-        'menu' => 'Resources/views/layouts/partials/admin',
+        'menu' => 'resources\views\layouts\partials\admin', 
+        //C:\wamp64\www\projetos_laravel\elyder\code-base\resources\views\layouts\partials\admin
 
         /**
          * 
@@ -137,7 +138,7 @@ return [
          * 
          * Edit files crud generator
          */
-        'crud' =>  'Resources/views',
+        'crud' =>  'Resources\views',
         'files_crud' =>  ['index','create', 'edit', 'show'],
     ],
     /*
