@@ -1,0 +1,13 @@
+	// Routes for $NAME$
+	Route::group(['prefix'=>'$LOWER_NAME$'], function()
+	{
+		Route::get('/', '$NAME$Controller@index')->name('$LOWER_NAME$');
+		Route::get('/all', '$NAME$Controller@create')->name('$LOWER_NAME$.all');
+		Route::get('/create', '$NAME$Controller@create')->name('$LOWER_NAME$.create');
+		Route::post('/', '$NAME$Controller@store')->name('$LOWER_NAME$.store');
+		Route::get('/{id}', '$NAME$Controller@show')->name('$LOWER_NAME$.show');
+		Route::get('/{id}/edit', '$NAME$Controller@edit')->name('$LOWER_NAME$.edit');
+		Route::put('/{id}', '$NAME$Controller@update')->name('$LOWER_NAME$.update');
+		Route::delete('/{id}', '$NAME$Controller@destroy')->name('$LOWER_NAME$.destroy');
+	});
+}); // end-route

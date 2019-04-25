@@ -1,0 +1,15 @@
+<!-- Menus to $NAME$ -->
+<li class="@activeIfUrl('$LOWER_NAME$*','open')">
+    <a class="nav-submenu" data-toggle="nav-submenu" href="javascript:void(0)">
+        <i class="si si-cup"></i>
+        <span class="sidebar-mini-hide">$NAME$</span>
+    </a>
+    <ul>
+        <li>
+            <a class="@activeIfUrl('$LOWER_NAME$','active')" href="/$LOWER_NAME$">
+                <span class="sidebar-mini-hide">Dashboard</span>
+            </a>
+        </li>
+        <!-- AddMenus for $MODULE_LOWER_NAME$ -->
+    </ul>    
+</li>

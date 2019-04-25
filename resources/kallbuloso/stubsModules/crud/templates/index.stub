@@ -1,0 +1,5 @@
+@extends('$LOWER_NAME$::layouts.app')
+
+@section('content')
+    <h1> Template $VIEW_NAME$</h1>
+@stop
