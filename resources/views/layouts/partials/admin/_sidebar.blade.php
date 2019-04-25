@@ -49,7 +49,7 @@
                         <!-- Side Navigation -->
                         <div class="content-side content-side-full">
                             <ul class="nav-main">
-                                @include('layouts.partials.admin._sidebar_menu')
+                                @include('layouts.partials.admin._menu')
                             </ul>
                         </div>
                         <!-- END Side Navigation -->
