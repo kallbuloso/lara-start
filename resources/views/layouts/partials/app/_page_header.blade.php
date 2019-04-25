@@ -6,7 +6,7 @@
                     <div class="content-header-section">
                         <!-- Logo -->
                         <div class="content-header-item">
-                            <a class="link-effect font-w700 mr-5" href="">
+                            <a class="link-effect font-w700 mr-5" href="{{ url('/') }}">
                                 <i class="si si-fire text-primary"></i>
                                 <span class="font-size-xl text-dual-primary-dark">code</span><span class="font-size-xl text-primary">base</span>
                             </a>

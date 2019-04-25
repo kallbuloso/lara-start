@@ -1,6 +1,6 @@
 
     <li>
-        <a class="active" href="/">
+        <a class="active" href="{{ url('/') }}">
             <i class="si si-home"></i>Home
         </a>
     </li>

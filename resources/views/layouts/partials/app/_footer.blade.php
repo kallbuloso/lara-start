@@ -1,8 +1,8 @@
             <!-- Footer -->
             <footer id="page-footer" class="bg-white opacity-0">
-                <div class="content content-full">
+                {{-- <div class="content content-full"> --}}
                     <!-- Footer Navigation -->
-                    <div class="row items-push-2x mt-30">
+                    {{-- <div class="row items-push-2x mt-30">
                         <div class="col-6 col-md-4">
                             <h3 class="h5 font-w700">Heading</h3>
                             <ul class="list list-simple-mini font-size-sm">
@@ -66,14 +66,14 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- END Footer Navigation -->
 
                     <!-- Copyright Info -->
-                    <div class="font-size-xs clearfix border-t pt-20 pb-10">
+                    <div class="content py-20 font-size-xs clearfix">
                         @include('layouts.partials._botton_footer')
                     </div>
                     <!-- END Copyright Info -->
-                </div>
+                {{-- </div> --}}
             </footer>
             <!-- END Footer -->
