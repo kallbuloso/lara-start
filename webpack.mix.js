@@ -57,7 +57,7 @@ mix
         'resources/assets/_es6/pages/op_auth_signup.js',
         'resources/assets/_es6/pages/op_coming_soon.js',
         'resources/assets/_es6/pages/op_installation.js', 
-    ],'public/js/pages/pages.js')
+    ],'public/js/pages')
 
     .js('resources/assets/js/app.js', 'public/js')   
     .js('resources/assets/_es6/main/app.js', 'public/js/codebase.app.js')
