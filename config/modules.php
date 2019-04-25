@@ -124,7 +124,7 @@ return [
         /**
          * 
          */
-        'menu' => 'Resources\views\layouts\partials',
+        'menu' => 'Resources/views/layouts/partials/admin',
 
         /**
          * 
@@ -137,7 +137,7 @@ return [
          * 
          * Edit files crud generator
          */
-        'crud' =>  'Resources\views',
+        'crud' =>  'Resources/views',
         'files_crud' =>  ['index','create', 'edit', 'show'],
     ],
     /*
