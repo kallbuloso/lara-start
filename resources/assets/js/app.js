@@ -23,12 +23,12 @@ import Vue from 'vue';
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 // Components
-Vue.component('breadcrumb', require('./components/breadcrumb.vue').default);
-Vue.component('block-tile-count', require('./components/blockTileCount.vue').default);
-Vue.component('box-panel', require('./components/boxPanel.vue').default);
-Vue.component('container', require('./components/container.vue').default);
-Vue.component('tabela-lista', require('./components/TabelaLista.vue').default);
-Vue.component('formulario', require('./components/forms/form.vue').default);
+Vue.component('v-breadcrumb', require('./components/breadcrumb.vue').default);
+Vue.component('v-block-tile-count', require('./components/blockTileCount.vue').default);
+Vue.component('v-box-panel', require('./components/boxPanel.vue').default);
+Vue.component('v-container', require('./components/container.vue').default);
+Vue.component('v-tabela-lista', require('./components/TabelaLista.vue').default);
+Vue.component('v-formulario', require('./components/forms/form.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
