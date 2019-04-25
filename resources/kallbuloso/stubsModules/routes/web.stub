@@ -11,6 +11,6 @@
 |
 */
 
-Route::prefix('$LOWER_NAME$')->group(function() {
+Route::group(['prefix' => '$LOWER_NAME$',  'middleware' => ['auth', 'web']], function() {
     Route::get('/', '$STUDLY_NAME$Controller@index');
 }); // end-route

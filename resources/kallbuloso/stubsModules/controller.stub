@@ -14,7 +14,13 @@ class $CLASS$ extends Controller
      */
     public function index()
     {
-        return view('$LOWER_NAME$::index');
+        $title = "Dashboard";
+        $breadcrumb = json_encode([
+            ["titulo"=>"Home","url"=>url('/')],
+            ["titulo"=>"$MODULENAME$","url"=>url('/$LOWER_NAME$')],
+            ["titulo"=>$title]
+        ]);
+        return view('$LOWER_NAME$::index', compact('title','breadcrumb','$PLURAL_NAME$'));
     }
 
     /**
