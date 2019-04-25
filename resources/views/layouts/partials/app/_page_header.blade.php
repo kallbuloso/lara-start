@@ -28,6 +28,8 @@
                         <ul class="nav-main-header nav-main-header-no-icons">
                             @include('layouts.partials.app._menu')
                         </ul>
+
+                        @include('layouts.partials._user_dorpdown')
                         <!-- END Header Navigation -->
 
                         <!-- Open Search Section -->

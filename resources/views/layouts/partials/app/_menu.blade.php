@@ -45,7 +45,8 @@
             <i class="si si-wrench"></i>Page
         </a>
     </li>
-    <li>        
+
+    {{-- <li>        
         @if (Route::has('login'))
             <div class="top-right links">
                 @auth
@@ -59,4 +60,4 @@
                 @endauth
             </div>
         @endif
-    </li>
+    </li> --}}
