@@ -2,11 +2,15 @@
 
 All notable changes to `Laravel 5.7` will be documented in this file.
 
+## Version 1.0.3
+
+### Added
+- Added custom template blade for Auth system
+
 ## Version 1.0.2
 
 ### Added
-- Added lang pt_BR
-- Added admin area
+- Added template blade for admin-area
 
 ## Version 1.0.1
 
